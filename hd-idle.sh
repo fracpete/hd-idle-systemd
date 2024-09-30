@@ -11,7 +11,7 @@ fi
 PID_FILE="/var/run/hd-idle.pid"
 # replace YOUR_UUID with the UUID of the partition of the HD that you want
 # to spin down after eg 600 seconds
-# NB: you can list multiple HDs
+# NB: you can list multiple HDs: -a FIRSTHD -i X -a SECONDHD -i Y ...
 PARAMS="-a /dev/disk/by-uuid/YOUR_UUID -i 600"
 
 if [ "$1" = "start" ]
