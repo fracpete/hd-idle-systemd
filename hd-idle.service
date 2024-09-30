@@ -3,7 +3,6 @@ Description=hd-idle service
 After=syslog.target network.target
 
 [Service]
-Environment="PATH=/usr/local/bin:/usr/bin
 Type=oneshot
 ExecStart=/usr/local/bin/hd-idle.sh start
 ExecStop=/usr/local/bin/hd-idle.sh stop
